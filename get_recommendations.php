@@ -11,17 +11,18 @@ if ($result->num_rows > 0) {
       if ($counter==0) {
         // code...
         ?>
-        <div id="cardstart" class="col-md-8 offset-md-1 mb-3 pt-2 pb-4 " data-aos="zoom-in-down" data-aos-duration="600">
+      <div style="float:right; width:1100px; height:290px; overflow-y:auto;">
+        
+ <div class="col-md-8 offset-md-1 mb-3 pt-2 pb-4 " data-aos="zoom-in-down" data-aos-duration="600">
               <?php
       }else{
         ?>
-        <div id="cardstart" class="col-md-8 offset-md-1 mt-4 mb-4 pt-2 pb-4 " data-aos="zoom-in-down" data-aos-duration="600"  data-aos-anchor-placement="top-bottom" data-aos-offset="100">
-
-
+        <div class="col-md-8 offset-md-1 mt-4 mb-4 pt-2 pb-4 " data-aos="zoom-in-down" data-aos-duration="600"  data-aos-anchor-placement="top-bottom" data-aos-offset="100">
 
         <?php
       }
       ?>
+<button type='button' class='close' onclick='$(this).parent().remove();'>×</button>
       <div class="card headline">
           <div class="card-body">
             <div class="card-title">
@@ -60,3 +61,5 @@ $con->close();
 
 
  ?>
+</div>
+</div>
